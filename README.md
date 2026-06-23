@@ -1,2 +1,8 @@
-# llm-pulse
-axentx product · An independent alert service that detects and alerts on LLM API performance degradation and model drift before users notice.
+# Email Alerts
+
+Email alerts for incidents.
+
+## Usage
+
+1. Install the package using `poetry install`.
+2. Run the tests using `poetry run pytest`.
