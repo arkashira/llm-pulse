@@ -1,10 +1,15 @@
-# LLM Pulse
-LLM Pulse is a monitoring and visualization tool for LLM APIs. It provides a dashboard for viewing real-time performance metrics and detected issues.
+# LLM Pulse Dashboard
+
+A simple dashboard to monitor LLM APIs and view alerts.
 
 ## Usage
-To use LLM Pulse, create an instance of the `LLM_Pulse` class and add metrics and issues using the `add_metric` and `add_issue` methods. You can then retrieve the metrics and issues using the `get_metrics` and `get_issues` methods.
 
-## Features
-* Real-time performance metrics
-* Detected issues and alerts
-* Customizable dashboard views
+1. Create a `Dashboard` instance.
+2. Add `API` instances to the dashboard using `add_api`.
+3. Get real-time performance data using `get_realtime_performance_data`.
+4. Get alerts using `get_alerts`.
+5. Check responsiveness and accessibility using `is_responsive` and `is_accessible`.
+
+## Testing
+
+Run tests using `python -m pytest`.
