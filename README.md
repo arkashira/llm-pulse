@@ -1,15 +1,13 @@
-# LLM Pulse Dashboard
+# Model Drift Detector
 
-A simple dashboard to monitor LLM APIs and view alerts.
+A simple model drift detector using semantic clustering.
 
 ## Usage
 
-1. Create a `Dashboard` instance.
-2. Add `API` instances to the dashboard using `add_api`.
-3. Get real-time performance data using `get_realtime_performance_data`.
-4. Get alerts using `get_alerts`.
-5. Check responsiveness and accessibility using `is_responsive` and `is_accessible`.
+1. Create a `ModelDriftDetector` instance with optional `sample_rate` and `drift_threshold` parameters.
+2. Call `detect_drift` with a prompt and response to sample and cluster the response.
+3. If drift is detected, a `ValueError` is raised.
 
 ## Testing
 
-Run tests using `python -m pytest`.
+Run `pytest` to execute the tests.
